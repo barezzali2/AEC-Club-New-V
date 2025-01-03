@@ -1,0 +1,240 @@
+* {
+  font-family: "Poppins", sans-serif; 
+  margin: 0;
+  padding: 0;
+}
+
+
+/* General styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+    /* background-color: #001F54; Example color */
+    /* color: white; */
+}
+
+
+header nav {
+    float: right;
+    margin-top: 15%;
+}
+
+
+header .logo-img {
+    width: 120px;
+    margin-left: -5%;
+    background-color: #ffffff;
+    /* padding: 4px 4px; */
+    border-radius: 90px;
+    box-shadow: 0.5px 0.5px 4px 0.5px black;
+    animation: logoSpin 4s infinite linear;
+}
+
+
+@keyframes logoSpin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+
+nav {
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    display: none;
+    flex-direction: column;
+    background-color: #172a54;
+    border-radius: 8px;
+    padding: 5% 35%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    opacity: 0; /* Start fully transparent */
+    transform: translateY(-20px); /* Start slightly above */
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out; /* Smooth transition */
+}
+
+nav a {
+    padding: 20px 20px;
+    color: white;
+    text-decoration: none;
+    animation-fill-mode: forwards;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* nav a:hover {
+    background-color: #003366;
+} */
+
+/* Hamburger button styles */
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.hamburger div {
+    width: 25px;
+    height: 3.5px;
+    background-color: #172a54;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.hamburger.active {
+    transform: rotate(90deg); /* Rotate when active */
+  }
+
+  .hamburger.active div {
+    background-color: #c7972b; /* Change color on hover for better feedback */
+}
+
+
+/* Show menu on active */
+.menu.active {
+    display: flex;
+    opacity: 1; /* Fully visible */
+    transform: translateY(0); /* Move into place */
+}
+
+.menu.active a {
+    animation: fadeIn 0.45s ease-in-out;
+}
+
+.menu.active a:nth-child(1) { animation-delay: 0s; }
+.menu.active a:nth-child(2) { animation-delay: 0s; }
+.menu.active a:nth-child(3) { animation-delay: 0s; }
+.menu.active a:nth-child(4) { animation-delay: 0s; }
+.menu.active a:nth-child(5) { animation-delay: 0s; }
+.menu.active a:nth-child(6) { animation-delay: 0s; }
+
+
+
+/* Keyframes for animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+
+
+
+/* Main */
+
+main{
+    padding: 10px 10px;
+}
+main .main-header .sp1{
+    color: #c7972b;
+}
+
+main .main-header h2 {
+    margin-bottom: 20px;
+}
+
+main .main-header h4 {
+    line-height: 22px;
+}
+
+main .container-home{
+    width: 100%;
+    padding: 30px 0;
+}
+
+
+main .container-home .rect1 img,
+ .rect2 img,
+  .rect3 img,
+   .rect4 img,
+    .rect5 img,
+     .rect6 img{
+    width: 100%;
+}
+
+.container-home 
+.rect1 ,
+ .rect2 ,
+  .rect3 ,
+   .rect4 ,
+    .rect5 ,
+     .rect6 {
+        /* background-color: #172a54; */
+        /* padding: 20px; */
+        margin-bottom: 40px;
+     }
+
+
+.container-home 
+.rect1 h3,
+.rect2 h3,
+ .rect3 h3,
+  .rect4 h3,
+   .rect5 h3,
+    .rect6 h3{
+        position: absolute;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.64);
+        padding: 30px;
+        margin-top: -20%;
+        text-align: center;
+        justify-content: center;
+        width: 81.6%;
+        font-size: 23px;
+        
+    }
+
+
+footer{
+    width: 100%;
+    background-color: #172a54;
+    color: #ffffff;
+    text-align: center;
+    padding: 6% 0;
+}
+
+footer p {
+    padding: 20px 0;
+    font-size: 17px;
+}
+
+footer .logo-img {
+    width: 120px;
+    background-color: #ffffff;
+    border-radius: 90px;
+    /* box-shadow: 0.5px 0.5px 4px 0.5px black; */
+    /* margin: 0 35%; */
+
+}
+
+
+
+
+
+
+
+
+/* Event Page */
+
+.container-event .gen-event
+.rect1, 
+.rect2, 
+.rect3, 
+.rect4 h3{
+
+}
