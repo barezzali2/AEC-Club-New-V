@@ -23,7 +23,7 @@ header nav {
 
 
 header .logo-img {
-    width: 120px;
+    width: 100px;
     margin-left: -5%;
     background-color: #ffffff;
     /* padding: 4px 4px; */
@@ -231,10 +231,67 @@ footer .logo-img {
 
 /* Event Page */
 
-.container-event .gen-event
-.rect1, 
-.rect2, 
-.rect3, 
-.rect4 h3{
+.container-event {
+    margin-top: 15%;
+}
+          
+.container-event .gen-event 
+.gen1,
+    .gen2, 
+        .gen3,
+            .gen4{
+                /* padding: 10px; */
+                margin-bottom: 10%;
+            }
 
+.container-event .gen-event 
+.gen1 img,
+    .gen2 img, 
+        .gen3 img,
+            .gen4 img{
+                width: 100%;
+            }
+
+
+
+.container-event .gen-event 
+.gen1 h3,
+    .gen2 h3, 
+        .gen3 h3,
+            .gen4 h3{
+                margin: 7px 0 10px 0;
+            }
+
+.container-event .gen-event 
+.gen1 h4,
+    .gen2 h4, 
+        .gen3 h4,
+            .gen4 h4{
+                margin: 7px 0 10px 0;
+            }
+
+
+.container-event .oth-event{
+    width: 100%;
+}
+
+.container-event .oth-event .filter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #9ea9c2;
+    padding: 22px;
+    border-radius: 10px;
+    margin-bottom: 10%;
+}
+
+
+.container-event .oth-event .filter button {
+    border: none;
+    background-color: transparent;
+}
+
+.container-event .oth-event .filter img {
+    width: 40px;
+    /* margin: 10px; */
 }
