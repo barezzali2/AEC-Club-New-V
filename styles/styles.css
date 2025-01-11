@@ -18,12 +18,12 @@ header {
 
 header nav {
     float: right;
-    margin-top: 15%;
+    margin-top: 11%;
 }
 
 
 header .logo-img {
-    width: 100px;
+    width: 88px;
     margin-left: -5%;
     background-color: #ffffff;
     /* padding: 4px 4px; */
@@ -46,7 +46,7 @@ header .logo-img {
 nav {
     position: absolute;
     top: 70px;
-    right: 20px;
+    right: 17px;
     display: none;
     flex-direction: column;
     background-color: #172a54;
@@ -56,6 +56,7 @@ nav {
     opacity: 0; /* Start fully transparent */
     transform: translateY(-20px); /* Start slightly above */
     transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out; /* Smooth transition */
+    z-index: 1;
 }
 
 nav a {
@@ -169,37 +170,37 @@ main .container-home .rect1 img,
     width: 100%;
 }
 
-.container-home 
-.rect1 ,
- .rect2 ,
-  .rect3 ,
-   .rect4 ,
-    .rect5 ,
-     .rect6 {
-        /* background-color: #172a54; */
-        /* padding: 20px; */
-        margin-bottom: 40px;
-     }
+.container-home .rect1,
+.container-home .rect2,
+.container-home .rect3,
+.container-home .rect4,
+.container-home .rect5,
+.container-home .rect6 {
+    position: relative; /* To position the text overlay relative to the container */
+    margin-bottom: 40px;
+}
 
 
-.container-home 
-.rect1 h3,
-.rect2 h3,
- .rect3 h3,
-  .rect4 h3,
-   .rect5 h3,
-    .rect6 h3{
-        position: absolute;
-        color: white;
-        background-color: rgba(0, 0, 0, 0.64);
-        padding: 30px;
-        margin-top: -21%;
-        text-align: center;
-        justify-content: center;
-        width: 81.6%;
-        font-size: 23px;
-        
-    }
+
+.container-home .rect1 a h3,
+.container-home .rect2 a h3,
+.container-home .rect3 a h3,
+.container-home .rect4 a h3,
+.container-home .rect5 a h3,
+.container-home .rect6 a h3 {
+    position: absolute; /* Absolute positioning for the overlay */
+    bottom: 0; /* Sticks the overlay to the bottom of the container */
+    width: 100%; /* Ensures the overlay spans the container's width */
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
+    color: white; /* White text for contrast */
+    text-align: center; /* Centers the text */
+    font-size: 23px; /* Adjust text size as needed */
+    padding: 20px 0; /* Adds vertical padding for the text */
+    margin: 1% 0; /* Removes default margin */
+}
+
+    
+
 
 
 footer{
