@@ -152,6 +152,8 @@ main .main-header h4 {
     line-height: 22px;
 }
 
+
+
 main .container-home{
     width: 100%;
     padding: 30px 0;
@@ -191,7 +193,7 @@ main .container-home .rect1 img,
         color: white;
         background-color: rgba(0, 0, 0, 0.64);
         padding: 30px;
-        margin-top: -20%;
+        margin-top: -21%;
         text-align: center;
         justify-content: center;
         width: 81.6%;
