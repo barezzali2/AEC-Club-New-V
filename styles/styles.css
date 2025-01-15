@@ -47,12 +47,11 @@ nav {
     width: 75%;
     position: absolute;
     top: 40px;
-    margin-left: 21.5%;
+    margin-left: 21.6%;
     /* right: -30px; */
     display: flex;
     flex-direction: column;
     background-color: #172a54;
-    /* border-radius: 8px; */
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
     padding: 5% 0%;
