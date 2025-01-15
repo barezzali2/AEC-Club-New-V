@@ -11,8 +11,6 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px 20px;
-    /* background-color: #001F54; Example color */
-    /* color: white; */
 }
 
 
@@ -47,7 +45,7 @@ nav {
     width: 75%;
     position: absolute;
     top: 40px;
-    margin-left: 21.6%;
+    margin-left: 21.5%;
     /* right: -30px; */
     display: flex;
     flex-direction: column;
@@ -111,7 +109,6 @@ nav a {
 .menu.active {
     display: flex;
     opacity: 1; /* Fully visible */
-    /* transform: translateY(0); Move into place */
     transform: translateX(-1.5%);
     transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
 }
@@ -230,9 +227,6 @@ footer .logo-img {
     width: 120px;
     background-color: #ffffff;
     border-radius: 90px;
-    /* box-shadow: 0.5px 0.5px 4px 0.5px black; */
-    /* margin: 0 35%; */
-
 }
 
 
