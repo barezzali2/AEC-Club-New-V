@@ -44,14 +44,18 @@ margin-top: 10.5%;
 }
 
 nav {
+    width: 75%;
     position: absolute;
     top: 40px;
-    right: -10px;
+    margin-left: 21.5%;
+    /* right: -30px; */
     display: flex;
     flex-direction: column;
     background-color: #172a54;
-    border-radius: 8px;
-    padding: 5% 27.5%;
+    /* border-radius: 8px; */
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    padding: 5% 0%;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     opacity: 0; /* Start fully transparent */
     transform: translateY(-20px); /* Start slightly above */
@@ -146,7 +150,7 @@ nav a {
 /* Main */
 
 main{
-    padding: 10px 10px;
+    padding: 7px 10px;
 }
 main .main-header .sp1{
     color: #c7972b;
