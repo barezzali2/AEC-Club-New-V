@@ -16,12 +16,6 @@ header {
 }
 
 
-header nav {
-    float: right;
-    margin-top: 11%;
-}
-
-
 header .logo-img {
     width: 88px;
     margin-left: -5%;
@@ -43,19 +37,26 @@ header .logo-img {
   }
 
 
+
+header nav {
+float: right;
+margin-top: 10.5%;
+}
+
 nav {
     position: absolute;
-    top: 70px;
-    right: 17px;
-    display: none;
+    top: 40px;
+    right: -10px;
+    display: flex;
     flex-direction: column;
     background-color: #172a54;
     border-radius: 8px;
-    padding: 5% 35%;
+    padding: 5% 27.5%;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     opacity: 0; /* Start fully transparent */
     transform: translateY(-20px); /* Start slightly above */
-    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out; /* Smooth transition */
+    /* transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out; Smooth transition */
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
     z-index: 1;
 }
 
@@ -91,6 +92,7 @@ nav a {
 }
 
 .hamburger.active {
+    opacity: 1;
     transform: rotate(90deg); /* Rotate when active */
   }
 
@@ -100,10 +102,16 @@ nav a {
 
 
 /* Show menu on active */
+
+.menu {
+    transform: translateX(0); /* Default position off-screen */
+}
+
 .menu.active {
     display: flex;
     opacity: 1; /* Fully visible */
-    transform: translateY(0); /* Move into place */
+    /* transform: translateY(0); Move into place */
+    transform: translateX(-1.5%);
 }
 
 .menu.active a {
