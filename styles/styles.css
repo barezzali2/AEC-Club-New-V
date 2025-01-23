@@ -293,9 +293,10 @@ footer .logo-img {
 }
 
 
-.container-event .oth-event .filter button {
+.container-event .oth-event .filter .filter-btn {
     border: none;
     background-color: transparent;
+    cursor: pointer;
 }
 
 .container-event .oth-event .filter img {
